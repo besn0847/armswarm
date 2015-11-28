@@ -1,0 +1,41 @@
+{
+  "name": "angular-semantic-ui",
+  "description": "Angular - AngularJS directives for Semantic UI.",
+  "version": "0.0.3",
+  "keywords": [
+    "angular",
+    "ui"
+  ],
+  "homepage": "http://solcates.github.io/angular-semantic-ui",
+  "bugs": "https://github.com/solcates/angular-semantic-ui",
+  "author": {
+    "name": "Alex Kuleshov",
+    "url": "https://github.com/0xAX"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solcates/angular-semantic-ui.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/solcates/angular-semantic-ui/blob/master/LICENSE.md"
+    }
+  ],
+  "main": [
+    "dist/angular-semantic-ui.js",
+    "dist/angular-semantic-ui.min.js"
+  ],
+  "ignore": [
+    "docs",
+    "test",
+    "CONTRIBUTING.md"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-mocks" : "latest",
+    "semantic": "latest"
+  },
+  "devDependencies": {
+  }
+}
