@@ -3,6 +3,10 @@
 Refer to this blog post to understand the why : http://besn0847.blogspot.com/2015/11/building-internet-wide-container.html
 
 Please note this requires your host to have Docker 1.9.0 installed.
+You also need to start Docker with the following options:
+```bash
+DOCKER_OPTS="-H unix:///var/run/docker.sock --label platform=x86|arm"
+```
 
 First you need to generate new OpenVpn keys specific to your deployment. Refer to this project from Jérôme to get hold of them : https://github.com/jpetazzo/dockvpn.
 You should get the following files : cert.pem, csr.pem, dh.pem, key.pem & client.ovpn.
