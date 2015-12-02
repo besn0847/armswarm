@@ -1,7 +1,9 @@
 FROM besn0847/alpinevpn
 
-RUN apk update && \
-        apk add openvpn socat supervisor 
+RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \ 
+	apk update && \
+        apk add openvpn socat supervisor consul@testing && \
+	mkdir /data 
 
 ADD ./bin/ /bin/
 ADD ./etc/openvpn/ /etc/openvpn/
